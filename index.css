@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Heebo:wght@500&family=Inter:wght@500&family=Lato:ital,wght@0,400;1,300&family=Open+Sans:wght@500&family=Roboto:ital@0;1&family=Ubuntu:wght@400;500;700&family=Varela+Round&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e9ebee;
+}
+.contener{
+    display: block;
+    width: 50%;
+    height: 605px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 16px;
+    padding-top: 8px;
+}
+.contener .heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* font-weight: bold; */
+    margin: 15px 19px;
+}
+.contener .heading h1{
+    font-size: 35px;
+}
+.contener .heading p{
+    font-size: 22px;
+}
+
+.user-detail-section{
+    display: grid;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #dadde1;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 16px;
+    column-gap: 12px;
+    grid-template-areas: 
+    'first first last last'
+    'mobile mobile mobile mobile'
+    'pass pass pass pass'
+    'dob dob dob dob'
+    'gender gender gender gender'
+    'term term term term'
+    'sinbtn sinbtn sinbtn sinbtn';
+}
+#first{
+    grid-area: first;
+    margin-top: 16px;
+
+}
+#last{grid-area: last;
+    margin-top: 16px;
+}
+#mobileNo{grid-area: mobile;}
+#password{grid-area: pass;}
+#dateSec{
+    grid-area: sec1;
+}
+#monthSec{
+    grid-area: sec2;
+}
+#yearSec{
+    grid-area: sec3;
+}
+.term-policy{
+    grid-area: term;
+    margin: 12px 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.dob p{
+    grid-area: p;
+    margin: 0px 0px 12px 0px;
+}
+.dob{
+    grid-area: dob;
+    margin: 6px 0px;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-areas: 
+    'p p p'
+    'sec1 sec2 sec3';
+    column-gap: 16px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dob select{
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 2px 12px;
+    cursor: pointer;
+}
+
+.gender{
+    grid-area: gender;
+}
+.signUpInBtn{
+    grid-area: sinbtn;
+    display: block;
+    margin: 12px auto;
+}
+.signUpInBtn button{
+    height: 40px;
+    width: 250px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: #47aa33;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    border:none;
+}
+.signUpInBtn button:hover{
+    background-color:  #2abe0c
+}
+.user-detail-section .fram-box
+{
+    height: 40px;
+    border: 2px solid black;    
+    margin: 8px 0px;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 2px 16px;
+    border-radius: 4px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.gender{
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+    
+}
+.gender p{
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 0px;
+}
+.g-bbox{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+.g-box{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.555);
+    padding: 2px 16px;
+    margin: 2px 12px 2px 0px;
+}
+.g-box input{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    cursor: pointer;
+
+}

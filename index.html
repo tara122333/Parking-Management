@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="style" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-black w-full h-16 relative">
+        <ul class="flex justify-center items-center text-white h-full" style="font-family: monospace;">
+            <li class="mx-4 my-4">
+                <a class="px-7 py-2 text-2xl hover:bg-red-500 hover:rounded-xl" href="#">Home</a>
+            </li>
+            <li class="mx-4 my-4">
+                <a class="px-7 py-2 text-2xl hover:bg-red-500 hover:rounded-xl" href="#">Parking</a>
+            </li>
+            <li class="mx-4 my-4">
+                <a class="px-7 py-2 text-2xl hover:bg-red-500 hover:rounded-xl" href="#">Services</a>
+            </li>
+            <li class="mx-4 my-4">
+                <a class="px-7 py-2 text-2xl hover:bg-red-500 hover:rounded-xl" href="#">Contact Us</a>
+            </li>
+            <li class="mx-4 my-4">
+                    <div class="time-box text-2xl border-2 border-white px-6">
+                        <h1 id="time">12:12:13 AM</h1>
+                </div>
+            </li>
+            <li class="mx-4 my-4">
+                <div class="day-box text-2xl border-2 border-white px-6">
+                    <h1 id="day">Wed | 9 Feb | 2022</h1>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container w-full bg-no-repeat bg-cover flex justify-center items-center flex-col" style="background-image:url('car.jpg'); height: 100vh; width: 100vw;" >
+            <form action="index.html" method="post" class="flex flex-col border-2 border-orange-100 px-5 py-5 rounded-2xl w-2/5" data-aos="flip-right">
+                <input type="text" id="name" name="name" placeholder="Enter Your Full Name" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                <input type="number" id="mobile" name="mobile" placeholder="Enter Mobile Number" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                <input type="email" id="mobile" name="mobile" placeholder="Enter Email Id" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                <input type="text" id="vehicle_Name" name="vehicle_Name" placeholder="Enter vehicle Name" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                <input type="text" id="vehicle_Number" name="vehicle_Number" placeholder="Enter vehicle Number" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                <div class="sub-box flex">
+                    <label for="entry_date" class="w-96 text-xl font-bold font-mono bg-white px-4 mx-2 rounded-lg my-1 border-2 border-red-600 opacity-70">Entery date</label>
+                    <input type="date" id="entry_date" name="entry_date" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                </div>
+                <div class="sub-box flex">
+                    <label for="entry_time" class="w-96 text-xl font-bold font-mono bg-white px-4 mx-2 rounded-lg my-1 border-2 border-red-600 opacity-70">Entery Time</label>
+                    <input type="time" id="entry_time" name="entry_time" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                </div>
+                <div class="sub-box flex">
+                    <label for="exit_date" class="w-96 text-xl font-bold font-mono bg-white px-4 mx-2 rounded-lg my-1 border-2 border-red-600 opacity-70">Exit date</label>
+                    <input type="date" id="exit_date" name="exit_date" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                </div>
+                <div class="sub-box flex">
+                    <label for="exit_time" class="w-96 text-xl font-bold font-mono bg-white px-4 mx-2 rounded-lg my-1 border-2 border-red-600 opacity-70">Exit Time</label>
+                    <input type="time" id="exit_time" name="exit_time" class="w-full h-8 px-12 py-3 rounded-2xl font-bold font-mono my-1 text-xl bg-orange-100 border-2 border-orange-300 text-black outline-none">
+                </div>
+                <input type="submit" value="Submit" class="w-72 block mx-auto border-2 border-black bg-white text-xl text-black mt-6 rounded-xl font-bold cursor-pointer py-1 hover:bg-red-500 hover:rounded-xl hover:text-white opacity-100 outline-none" style="font-family: monospace;">
+            </form>
+        </div>
+
+            
+    </section>
+    <footer class="bg-black w-full h-20 text-white flex justify-center items-center">
+        <h1 class="text-2xl">Parking420@tara.com Copyright&copy;2022</h1>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
